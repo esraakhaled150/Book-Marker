@@ -24,7 +24,7 @@ function ValidsiteName() {
 
 
 function validUrl() {
-  var urlRegex = /^(https:\/\/)?(www\.)?[A-Za-z0-9_\.]{1,}\.[a-z]{3}$/;
+  var urlRegex =/^(https:\/\/)?(www\.)?[A-Za-z0-9_.-]+\.[a-z]{2,}(\/.*)?$/;
 
   if(!urlRegex.test(siteUrl.value) ){
 return false;
@@ -72,7 +72,7 @@ function displyBookMark (){
   for (let i = 0; i < bookMarkContainer.length; i++) {
     bookMarkBox +=`       <tr>
         <td class="text-center"> ${bookMarkContainer[i].name}</td>
-        <td> <a href= https://${bookMarkContainer[i].url}><button class="btn btn-success"> Visit</button></a> </td>
+        <td> <a href= "${bookMarkContainer[i].url}"><button class="btn btn-success"> Visit</button></a> </td>
         <td> <button  onclick="setBookMarkValues(${i})" class='btn btn-warning'>  Update</button><td>
          <td> <button onclick="deleteBookMark(${i})" class='btn btn-danger'>  Delete</button><td>
   
