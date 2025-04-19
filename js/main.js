@@ -24,7 +24,7 @@ function ValidsiteName() {
 
 
 function validUrl() {
-  var urlRegex = /^(https:\/\/)?(www\.)?[A-Za-z0-9_\.]{1,}\.[a-z]{3}$/;
+  var urlRegex = /^(http:\/\/)?(www\.)?[A-Za-z0-9_\.]{1,}\.[a-z]{3}$/;
 
   if(!urlRegex.test(siteUrl.value) ){
 return false;
