@@ -1,0 +1,23 @@
+h2{
+    color: lightskyblue;
+    font-weight: 800;
+}
+
+#Submit{
+    width: 50%;
+    background-color:lightskyblue ;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+#Submit:hover{
+    background-color: white;
+}
+
+.output{
+    background-color: #eee;
+}
+
+#updatBtn{
+    display: none;
+}

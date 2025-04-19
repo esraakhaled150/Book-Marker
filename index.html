@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book marker</title>
+  <link rel="stylesheet" href="css/all.min.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="container pt-3 shadow-lg p-3 mb-5 bg-white rounded mt-5">
+  <h1 class="text-muted pb-3"> Book marker</h1>
+  <hr>
+  <div class="form-project  text-center my-3 py-3">
+
+  <h2> Book mark your favorite sites</h2>
+  <div class="form-group mx-5">
+    <label class=" text-center fw-bold py-2 fs-5"> Site Name</label>
+    <input  id="name" class="form-control my-4" type="text" placeholder="Book mark name"  >
+  </div>
+
+  <div class="form-group mx-5">
+    <label class=" text-center fw-bold py-2 fs-5"> Site URL</label>
+    <input  id="url" class="form-control my-4" type="text" placeholder="Site URL"  >
+  </div>
+  <button disabled onclick="addBookmark()" id="Submit" class="btn w-50 m-auto py-2"> Submit</button>
+  <button onclick="updateBookMark()" id="updatBtn" class="btn btn-warning w-50 mt-3 py-2 m-auto"> Update </button>
+  </div>
+
+<input onkeyup="searchBookmark(this.value)" class="form-control my-3" placeholder="Search by book mark name ...">
+
+</div>
+
+<div id="output" class="output">
+  <table class="table">
+    <thead class="text-center"> 
+
+    </thead>
+    <tbody class="text-center"  id="tableBody">
+      
+    </tbody>
+  </table>
+</div>
+<hr>
+
+<footer class="text-center">
+  <h6 class="text-muted">
+  Created by Esraa khaled @2025
+  </h6>
+</footer>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
